@@ -1,153 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-<title>Goldy</title>
+  <head>
+    <title>Goldy</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Goldy Thundiyil Joseph">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Goldy T Joseph, goldy t joseph, goldy thundiyil joseph, goldy, Goldy" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'> </script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://www.w3schools.com/js/myScript1.js"> </script> 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js'> </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'> </script>
-<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-<script>
-  jQuery(document).ready(function($) {
-            setInterval(function() {
-              moveRight();
-            }, 1500);
-        
-            var slideCount = $("#slider ul li").length;
-            var slideWidth = $("#slider ul li").width();
-            var slideHeight = $("#slider ul li").height();
-            var sliderUlWidth = slideCount * slideWidth;
-        
-            $("#slider").css({ width: slideWidth, height: slideHeight });
-        
-            $("#slider ul").css({ width: sliderUlWidth, marginLeft: -slideWidth });
-        
-            $("#slider ul li:last-child").prependTo("#slider ul");
-        
-           function moveLeft() {
-              $("#slider ul").animate(
-                {
-                  left: +slideWidth
-                },
-                200,
-                function() {
-                 $("#slider ul li:last-child").prependTo("#slider ul");
-                  $("#slider ul").css("left", "");
-                }
-              );
-            }
-        
-            function moveRight() {
-              $("#slider ul").animate(
-               {
-                  left: -slideWidth
-                },
-                200,
-                function() {
-                  $("#slider ul li:first-child").appendTo("#slider ul");
-                  $("#slider ul").css("left", "");
-                });
-            }});
-</script>
-
-
-<script type="text/javascript">
-  $(document).ready(function(){
-              $('.toggle').click(function(){
-              $('.toggle').toggleClass('active')
-              $('body').toggleClass('night')
-         });
-  });
-</script>
-
-</head>
-
-<header>
-            
-  <div class="header">
-  <!--start of header -->
-    <div id="social">
-      <div id="socialcontainer">
-        <ul>
-          <li> <a href="https://github.com/gol-dy"> <i class="fa fa-github"> </i> </a> </li>
-          <li> <a href="https://www.linkedin.com/in/goldy-t-joseph-5b72b315a/"> <i class="fa fa-linkedin"> </i> </a> </li>
-          <li> <a href="https://twitter.com/GoldyTJoseph"> <i class="fa fa-twitter"> </i> </a> </li>
-          <li> <a href="https://www.facebook.com/Goldytjoseph"> <i class="fa fa-facebook"> </i> </a> </li>
-          <li> <a href="https://www.instagram.com/st.badass/">  <i class="fa fa-instagram"> </i> </a> </li>
-        </ul>
+  <header>
+    <div class="container-fluid">
+      <!--starting of social media bar-->
+      <div class="social">
+        <a href="https://github.com/goldytjoseph"> <i class="fa fa-github" style="color:orange"> </i> </a>
+        <a href="https://www.linkedin.com/in/goldy-t-joseph-5b72b315a/"> <i class="fa fa-linkedin" style="color:orange"> </i> </a>
+        <a href="https://twitter.com/GoldyTJoseph/"> <i class="fa fa-twitter" style="color:orange"> </i> </a>
+        <a href="https://www.facebook.com/Goldytjoseph/"> <i class="fa fa-facebook" style="color:orange"> </i> </a>
+        <a href="https://www.instagram.com/the_w01fie/">  <i class="fa fa-instagram" style="color:orange"> </i> </a> 
       </div>
     </div>
-  </div>
-
-<div class="toggle"></div>
+  </header>
   
-</header>
-<!--end of header -->
+  <body style="background-color: rgb(35, 39, 43);">
+    <!--start of body-->
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col">
+          <!--start of about-->
+          <div class="section" id="about">
+            <div class="container">
+              <div class="card" data-aos="fade-up" data-aos-offset="10">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="container-fluid">
+                      <div class="h4 mt-0 title">
+                        <h3>Hi, I'm <span>Goldy.</span></h3>
+                        <h6>Developer | System Administrator | Open Source Enthusiast</h6>
+                      </div>
+                      <p style="text-align: justify;"> <small>I’m an engineer who can be an artist, teacher, chef, singer, and dancer when the mood strikes.
+                      Linux, cybersecurity, and networking are my interested areas.
+                      I like to write scripts using Bash and Python, and I am so much addicted to terminal
+                      lust for learning and curiosity made me self taught.</small> </p>
+                      <p> <small>fanboy of Nikola Tesla | Albert Einstein | Linus Torvalds | Richard Stallman | Dennis Ritchie </small> </p>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-sm-1">
+                        <button class="btn btn-dark btn-sm"> <a download href="resume/Goldy_T Joseph_Resume.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><i style="color:orange" class="fa fa-file"></i></a></button>
+                      </div>
+                      <div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#exampleModalLong">
+                        <i  style="color:orange" class="fa fa-address-card"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>          
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Contact Information</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card-body">
+                            <div class="row mt-3">
+                              <div class="col-sm-4"><i class="fa fa-envelope"></i></div>
+                              <div class="col-sm-8"><small> <a href="mailto:goldythundiyiljoseph@gmail.com?subject=Contacted from your webpage">goldythundiyiljoseph@gmail.com </a> </small> </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-sm-4"><i class="fa fa-phone"></i></div>
+                              <div class="col-sm-8"> <small> +91 9446480689, +974 70193313</small> </div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-sm-4"><i class="fa fa-flag"></i></div>
+                              <div class="col-sm-8"> <small> Indian </small></div>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-sm-4"><i class="fa fa-location-arrow"></i></div>
+                              <div class="col-sm-8"><small> Thundiyil (H), Kuruvamoozhy P.O Erumely, Kottayam, Kerala </small></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 
-
-    
-
-<body>
- 
-<!--start of slider-->
-
-  <div id="slider">
-
-    <section>
-      <ul>
-
-        <li> GOLDY THUNDIYIL JOSEPH </li>
-   
-        <li> 07 AUG 1996 </li>
-    
-        <li> INDIAN </li>
-  
-        <li> BIG BROTHER OF TWO </li>
-  
-        <li> LOVE LINUX A LOT 🐧 </li>
-      
-        <li> AN OCTOCAT FAN </li>
-
-        <li> LIKES TURTLE AND WASP </li>
-      
-        <li> GEEK </li>
-    
-      </ul>
-    </section>
-
+  <!--start of footer-->
+  <footer class="page-footer small">
+  <div class="footer-copyright text-center py-3" >
+    <p style="font-family: 'Parisienne', cursive; "> <small><a style=" color:orange;" href="https://goldytjoseph.github.io"> this website is the property of wolfie </small> </p> </a> 
   </div>
-
-<!--end of slider-->
-
-<!--start of about-->
-<section>
-  <div class="container">
-   <p> <small>I’m a computer science student, who can be an artist, teacher, chef, singer and dancer when mood strikes.</small> </p>
-   <p> <small>Linux, cybersecurity and networking are my interested areas.</small> </p>
-   <p> <small>I like to write scripts using Bash and Python, and I am so much addicted to terminal.</small> </p>
-   <p> <small>Thirst on getting knowledge and curiousity makes me self-taught.</small> </p>
-   <p> <small>fanboy of Nikola Tesla | Linus Torvalds | Albert Einstein</small> </p>
-<!--end of about-->
-  </div>
-</section>
-
-</body>
-
-<footer>
-  <p> <small> property of <a href="https://gol-dy.github.io"> pac-man </a> </small> </p>
-</footer>
+  </footer>
 
 </html>
